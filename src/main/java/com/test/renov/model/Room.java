@@ -2,7 +2,6 @@ package com.test.renov.model;
 
 import org.apache.commons.lang3.builder.EqualsBuilder;
 import org.apache.commons.lang3.builder.HashCodeBuilder;
-import org.apache.commons.lang3.builder.ToStringBuilder;
 
 public class Room {
 
@@ -49,10 +48,6 @@ public class Room {
 
     @Override
     public String toString() {
-        return new ToStringBuilder(this)
-                .append("length", length)
-                .append("width", width)
-                .append("height", height)
-                .toString();
+        return length + "x" + width + "x" + height;
     }
 }

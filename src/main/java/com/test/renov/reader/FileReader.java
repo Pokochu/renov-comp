@@ -31,7 +31,7 @@ public class FileReader implements Reader {
             roomList.forEach(room -> {
                 Integer roomCount = rooms.get(room);
                 if(roomCount == null) {
-                    rooms.put(room, 0);
+                    rooms.put(room, 1);
                     return;
                 }
                 rooms.put(room, roomCount + 1);
