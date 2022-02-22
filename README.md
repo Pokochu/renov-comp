@@ -22,3 +22,7 @@ For example:
 - list all rooms from input that have a cubic shape (order by total needed wallpaper
   descending)
 - list all rooms from input that are appearing more than once (order is irrelevant)
+
+## run application
+- from idea, copy an input file to anywhere in the project (preferably root or `src/main/resources`) and run main class with path to input file as arg. If no path is given it will process the `input1.txt` file from the email.
+- you can build jar with `gradlew shadowJar` with this you can test application with given input file as arg for the jar file
